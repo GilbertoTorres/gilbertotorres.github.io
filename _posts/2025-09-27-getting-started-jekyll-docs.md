@@ -18,8 +18,8 @@ Be sure to ⭐ the [jekyll repo](https://github.com/jekyll/jekyll) and the [Chri
 
 If you need help setting up your terminal on Windows, check out these two posts which will help you configure your terminal with WSL like mine
 
-- [Windows Terminal and WSL Config Fast, Simple, and Easy Guide](/posts/windows-terminal-wsl/)
-- [Setting Up Windows for JavaScript Development THE RIGHT WAY (WSL Terminal NVM Node Yarn VS Code ZSH)](/posts/windows-developer-setup/)
+- [Windows Terminal and WSL Config Fast, Simple, and Easy Guide](https://technotim.live/posts/windows-terminal-wsl/)
+- [Setting Up Windows for JavaScript Development THE RIGHT WAY (WSL Terminal NVM Node Yarn VS Code ZSH)](https://technotim.live/posts/windows-developer-setup/)
   - You can follow this guide up until installing NodeJS (You don't need NodeJS for Jekyll)
 
 ## Install Dependencies
