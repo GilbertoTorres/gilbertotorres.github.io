@@ -14,7 +14,7 @@ timezone: Europe/Brussels
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: BiGGie's Place! # the main title
+title: BiGGie's Place # the main title
 
 tagline: Home Lab Notes # it will display as the subtitle
 
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://media.licdn.com/dms/image/v2/D4E35AQHVXgqS6jXXFg/profile-framedphoto-shrink_400_400/B4EZl_xNpdIoAc-/0/1758785231711?e=1759590000&v=beta&t=2wCjJ2oA9mtvWfR4TAIvjv2hinK86jymycaBkq-Zgmg
+avatar: https://avatars.githubusercontent.com/u/49998574?s=400&v=4
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
