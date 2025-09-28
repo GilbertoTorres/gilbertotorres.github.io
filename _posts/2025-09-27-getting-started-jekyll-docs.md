@@ -4,6 +4,7 @@ title: "Meet Jekyll - The Static Site Generator"
 date: 2025-09-27 10:00:00 +0100
 categories: self-hosted
 tags: jekyll website github gitlab docker
+draft: true
 #image:
 #  path: 
 #  lqip:
