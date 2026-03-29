@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "BiGGie's Homelab — Architecture & Goals"
+title: "BiGGie's Homelab - Architecture & Goals"
 date: 2026-03-29 10:00:00 +0200
 categories: homelab
 tags: proxmox networking wireguard backup infrastructure
 ---
 
-This is the first post on BiGGie's Place — a blog where I document my homelab journey. Let me walk you through what I've built, how it's connected, and where I'm headed.
+This is the first post on BiGGie's Place - a blog where I document my homelab journey. Let me walk you through what I've built, how it's connected, and where I'm headed.
 
 ## The Big Picture
 
 My infrastructure spans two sites connected by WireGuard tunnels:
 
-- **Home Lab** — the primary environment for experimentation, local services, and management
-- **Datacenter (Hetzner)** — a resilience layer for offsite backups, security monitoring, and production-facing services
+- **Home Lab** - the primary environment for experimentation, local services, and management
+- **Datacenter (Hetzner)** - a resilience layer for offsite backups, security monitoring, and production-facing services
 
 Everything is documented in my internal wiki (the *BiGGie Grimoire*), and this blog is where I share the highlights publicly.
 
@@ -81,12 +81,12 @@ The network is segmented into purpose-specific VLANs at both sites:
 
 Two WireGuard point-to-point tunnels link the sites:
 
-- **wg0 (Backup)** — PBS replication between home storage and DC backup VLANs
-- **wg1 (Management)** — cross-site admin access between management VLANs
+- **wg0 (Backup)** - PBS replication between home storage and DC backup VLANs
+- **wg1 (Management)** - cross-site admin access between management VLANs
 
 ### External access
 
-All public-facing services go through **Pangolin + Newt** tunnel agents. There are no inbound firewall rules — zero-trust perimeter by design.
+All public-facing services go through **Pangolin + Newt** tunnel agents. There are no inbound firewall rules - zero-trust perimeter by design.
 
 ### DNS
 
@@ -113,10 +113,10 @@ DR test scenarios are documented and scheduled quarterly.
 
 Infrastructure is managed as code wherever possible:
 
-- **Terraform** — provisions all Proxmox resources (home + DC), state stored in GitLab
-- **Ansible** — configuration management and playbooks
-- **GitLab CI** — pipelines for plan/apply workflows
-- **GitLab CE** (self-hosted in DC) — the single source of truth
+- **Terraform** - provisions all Proxmox resources (home + DC), state stored in GitLab
+- **Ansible** - configuration management and playbooks
+- **GitLab CI** - pipelines for plan/apply workflows
+- **GitLab CE** (self-hosted in DC) - the single source of truth
 
 ---
 
@@ -126,14 +126,14 @@ Here's what I'm working on and where I'm heading:
 
 ### Active
 
-- **Wazuh + TheHive + MISP integration** — building a full SOC stack with automated alert triage
-- **Internal DNS migration** — adding `h.biggie.be` / `d.biggie.be` subdomains for all Pangolin resources
+- **Wazuh + TheHive + MISP integration** - building a full SOC stack with automated alert triage
+- **Internal DNS migration** - adding `h.biggie.be` / `d.biggie.be` subdomains for all Pangolin resources
 
 ### Planned
 
-- **Local AI stack** — Ollama + llama.cpp on an RTX 5080, with agent orchestration via Paperclip
-- **Honeypot infrastructure** — deployed on the DC node, alerts feeding into Wazuh
-- **Quarterly DR test execution** — formalizing and automating disaster recovery drills
+- **Local AI stack** - Ollama + llama.cpp on an RTX 5080, with agent orchestration via Paperclip
+- **Honeypot infrastructure** - deployed on the DC node, alerts feeding into Wazuh
+- **Quarterly DR test execution** - formalizing and automating disaster recovery drills
 
 ### Backlog
 
