@@ -68,14 +68,14 @@ A standalone **Proxmox VE** node with **OPNsense** as the firewall/router. This 
 
 The network is segmented into purpose-specific VLANs at both sites:
 
-| VLAN | Purpose | Home | DC |
-|---|---|---|---|
-| 100 / 200 | Management | 192.168.100.0/24 | 192.168.200.0/24 |
-| 101 | WLAN | 192.168.101.0/24 | — |
-| 102 / 202 | Lab | 192.168.102.0/24 | 192.168.202.0/24 |
-| 103 | IoT | 192.168.103.0/24 | — |
-| 104 / 204 | Storage | 192.168.104.0/24 | 192.168.204.0/24 |
-| DMZ | DMZ | 192.168.105.0/24 | 192.168.205.0/24 |
+| VLAN | Purpose |
+|---|---|
+| Management | Core infrastructure & admin access |
+| WLAN | Wireless clients (home only) |
+| Lab | Experimentation & dev workloads |
+| IoT | Smart home devices (home only) |
+| Storage | NFS / iSCSI / backup traffic |
+| DMZ | Isolated services |
 
 ### Cross-site connectivity
 
