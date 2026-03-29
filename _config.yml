@@ -66,8 +66,8 @@ analytics:
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id: 2a737df5-6276-4bf7-9b75-0ea3d2cf7193
+    domain: umami.biggie.be
   matomo:
     id: # fill in your Matomo ID
     domain: # fill in your Matomo domain
